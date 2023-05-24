@@ -1,8 +1,11 @@
-export const clientsList = ()=>{
-    
-  const clients = JSON.parse(localStorage.getItem("allClients"))
+export const clientsList = (clients)=>{
+   
 
-   for(var i = 0; i <= clients.length; i++){
+  if (!clients) return;
+  //const clients = JSON.parse(localStorage.getItem("allClients"))
+
+console.log(clients)
+   for(var i = 0; i < clients.length; i++){
 
      const liEl = document.createElement('li')
      const divEl = document.createElement('div')
@@ -18,11 +21,7 @@ export const clientsList = ()=>{
        <li>${clients[i].email}</li>
        </ul>`
 
-
-    
-
      const ulEl = document.getElementById('list')
      ulEl.appendChild(liEl)
-   
     }
 }

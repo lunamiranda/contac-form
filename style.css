@@ -6,3 +6,44 @@ input, button, textarea {
 .profile {
   width: 80px;
 }
+
+main{
+  width: 400px;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+}
+
+input {
+ outline:none;
+ background:transparent;
+ padding: 10px;
+ border: 1px solid gray;
+
+}
+
+body{
+background: linear-gradient(194deg, rgba(206,159,237,1) 0%, rgba(249,150,190,1) 49%, rgba(254,198,128,1) 100%);
+}
+
+.info {
+1
+  background: #fff;
+  padding: 10px;
+}
+
+#header{
+  border: 2px solid pink;
+}
+
+
+#submit{
+  padding: 10px;
+
+}
+
+
+
+
+
+
