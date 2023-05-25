@@ -1,29 +1,25 @@
-//const clients = []
+import { View } from "./view.js";
 
-import {clientsList} from './view.js'
-
- const saveData = (clients) => {
-  localStorage.setItem("allClients", JSON.stringify(clients))
-}
-
-
-export const newClient = (clients) => {
+export const newClient = (data) => {
   const inputName = document.getElementById("name").value;
   const inputPhone = document.getElementById("phone").value;
   const inputEmail = document.getElementById("email").value;
   const inputAge = document.getElementById("age").value;
-  const form = document.getElementById("form")
+  const form = document.getElementById("form");
 
-  const client = {name:inputName, age:inputAge, phone: inputPhone, email:inputEmail}
+  const newClient = {
+    name: inputName,
+    age: inputAge,
+    phone: inputPhone,
+    email: inputEmail,
+  };
 
+  data.push(newClient);
+  saveData(data);
+  form.reset();
+  View(data);
+};
 
-  console.log(clients)
-  clients.push(client)
-  saveData(clients)
-  form.reset()
-  console.log(clients) 
-  clientsList(clients)
-  
-}
-
-
+const saveData = (customer) => {
+  localStorage.setItem("allClients", JSON.stringify(customer));
+};

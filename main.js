@@ -1,13 +1,13 @@
-import {newClient} from "./capture.js"
-import {clientsList} from "./view.js"
+import { newClient } from "./capture.js";
+import { View } from "./view.js";
 
-const clients = JSON.parse(localStorage.getItem('allClients')) || []
-const buttonEl = document.getElementById("submit") 
+const clients = JSON.parse(localStorage.getItem("allClients")) || [];
 
-buttonEl.addEventListener('click', (e) => {
+const buttonEl = document.getElementById("submit");
+
+buttonEl.addEventListener("click", (e) => {
   e.preventDefault();
-    newClient(clients);
-
+  newClient(clients);
 });
 
-clientsList(clients);
+View(clients);
