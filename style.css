@@ -1,4 +1,6 @@
-input, button, textarea {
+input,
+button,
+textarea {
   display: block;
   margin-bottom: 1rem;
 }
@@ -7,43 +9,40 @@ input, button, textarea {
   width: 80px;
 }
 
-main{
+main {
   width: 400px;
- height: 100vh;
- justify-content: center;
- align-items: center;
 }
 
 input {
- outline:none;
- background:transparent;
- padding: 10px;
- border: 1px solid gray;
-
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  border: 1px solid gray;
+  width: 100%;
 }
 
-body{
-background: linear-gradient(194deg, rgba(206,159,237,1) 0%, rgba(249,150,190,1) 49%, rgba(254,198,128,1) 100%);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    194deg,
+    rgba(206, 159, 237, 1) 0%,
+    rgba(249, 150, 190, 1) 49%,
+    rgba(254, 198, 128, 1) 100%
+  );
 }
 
 .info {
-1
   background: #fff;
   padding: 10px;
 }
 
-#header{
+#header {
   border: 2px solid pink;
 }
 
-
-#submit{
+#submit {
   padding: 10px;
-
 }
-
-
-
-
-
-
