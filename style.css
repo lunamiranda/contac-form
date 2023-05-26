@@ -1,22 +1,19 @@
-input,
-button,
-textarea {
-  display: block;
-  margin-bottom: 1rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing; border-box;
 }
 
-.profile {
-  width: 80px;
-}
+
 
 main {
-  width: 400px;
+  border-radius: 20px;
+  width: 360px;
 }
 
 input {
   outline: none;
   background: transparent;
-  padding: 10px;
   border: 1px solid gray;
   width: 100%;
 }
@@ -26,12 +23,34 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(
-    194deg,
-    rgba(206, 159, 237, 1) 0%,
-    rgba(249, 150, 190, 1) 49%,
-    rgba(254, 198, 128, 1) 100%
-  );
+  
+background: linear-gradient(90deg, rgba(207,134,255,1) 8%, rgba(255,132,182,1) 50%, rgba(255,193,98,1) 90%);
+font-family: sans-serif;
+
+}
+
+ h1{
+color: #fff;
+font-weight: bold;
+
+
+ }
+
+.form{
+  background: #fff;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+form{
+ padding: 25px;
+}
+
+input {
+border: 1px solid #DFDFDF;
+padding: 10px 0;
 }
 
 .info {
@@ -39,10 +58,55 @@ body {
   padding: 10px;
 }
 
-#header {
-  border: 2px solid pink;
+.header  {
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 15px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #submit {
-  padding: 10px;
+  background: linear-gradient(90deg, rgba(214,152,255,1) 8%, rgba(255,154,195,1) 65%);
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 125px;
+  height: 25px;
+  color: #fff;
+  font-weight: bold;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+
+
+
 }
+
+.icons {
+  position: relative;
+  top:28px; right:-15px;
+  width: 15px;
+  height: 15px;
+  color:#C1C1C1;
+}
+
+
+
+input::placeholder{
+ color: gray;
+ position:absolute;
+ left: 38px;
+ font-size: 15px;
+}
+ 
+.btn{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

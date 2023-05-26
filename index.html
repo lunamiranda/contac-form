@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
+    <script src="https://kit.fontawesome.com/934450e04b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
-      <section id="header">
-        <div>
+      <section>
+        <div class="header">
        <h1>Stay in touch</h1>
         </div>
-      </section>
-      <section class="info">
-        <div>
+        <div class="form">
           <form id="form">
+          <i class="fa-solid fa-user icons"></i>
            <input type="text" id="name" placeholder="Name">
+           <i class="fa-solid fa-hashtag icons"></i>
            <input type="text" id="age" placeholder="Age">
+           <i class="fa-solid fa-envelope icons"></i>
            <input type="email" id="email" placeholder="E-mail">
+           <i class="fa-solid fa-phone icons"></i>
            <input type="text" id="phone" placeholder="Phone">
-           <button type="submit" id="submit">Send</button>
           </form>
+          <div class="btn">
+           <button type="submit" id="submit">SEND</button>
         </div>
-      </section>
-      <section>
-        <div id="client">
-          <ul id="list"></ul>
         </div>
       </section>
     </main>
+    <!--  <div id="client">
+          <ul id="list"></ul>
+    </div>-->
    
 
     <script type="module" src="/main.js"></script>
