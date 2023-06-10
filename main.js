@@ -1,3 +1,4 @@
+// This is a simple comment and dont have any effecs on the code
 import { newClient } from "./capture.js";
 import { View } from "./view.js";
 
